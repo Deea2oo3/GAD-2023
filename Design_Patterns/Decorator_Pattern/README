@@ -1,0 +1,19 @@
+Exemplu pentru Decorator pattern
+
+Acest program exemplifică utilizarea design pattern-ului Decorator în Java.
+Pattern-ul Decorator este un pattern structural care permite adăugarea de
+funcționalități suplimentare la obiectele existente într-un mod flexibil și
+dinamic.
+
+Programul definește o interfață Pizza și implementează clasa MargheritaPizza,
+care reprezintă o pizza Margherita de bază. Există, de asemenea, o clasă
+abstractă PizzaDecorator care implementează interfața Pizza și conține o
+referință la obiectul Pizza decorat.
+Programul include două clase concrete de decoratori: ExtraCheeseDecorator și
+BaconDecorator. Aceste clase extind PizzaDecorator și adaugă funcționalități
+suplimentare la pizza de bază.
+
+În clasa DecoratorPatternExample, în metoda main(), se creează o instanță a
+clasei MargheritaPizza. Apoi, se aplică decoratori adiționali pentru a adăuga
+extra brânză și bacon la pizza. Se afișează descrierea și costul pizzei în
+fiecare etapă.

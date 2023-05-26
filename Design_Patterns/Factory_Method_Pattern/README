@@ -1,0 +1,21 @@
+Exemplu pentru Factory Method Pattern
+
+Acest program exemplifică utilizarea design pattern-ului Factory Method în
+Java. Pattern-ul Factory Method este un pattern de creare care permite crearea
+de obiecte într-o clasă derivată, în loc de o clasă de bază. Astfel, se permite
+extinderea facilă a sistemului prin adăugarea de noi clase de produse.
+
+Programul definește o interfață Animal și două clase care implementează această
+interfață: Dog și Cat. Fiecare clasă implementează metoda makeSound() pentru a
+afișa sunetul specific fiecărui animal.
+
+Programul include si o interfață AnimalFactory și două clase care implementează
+această interfață: DogFactory și CatFactory. Fiecare clasă factory implementează
+metoda createAnimal() pentru a crea și returna un obiect de tipul corespunzător,
+respectiv Dog sau Cat.
+
+În clasa FactoryMethodPatternExample, în metoda main(), se creează instanțe ale
+claselor factory (DogFactory și CatFactory). Apoi, se folosesc metodele
+createAnimal() pentru a crea obiecte de tip Dog și Cat. Se apelează metoda
+makeSound() pe fiecare obiect pentru a afișa sunetul specific al fiecărui
+animal.
